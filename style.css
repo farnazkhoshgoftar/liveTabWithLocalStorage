@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: lightgray;
+}
+
+.btn {
+    all: unset;
+    width: 150px;
+    height: 70px;
+    font-size: 18px;
+    background-color: white;
+    color: red;
+    text-align: center;
+}
+
+.btnWrapper {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.view {
+    display: none;
+    width: calc(100% - 150px);
+    height: 100vh;
+    font-size: 22px;
+}
+
+.view.active {
+    display: inline;
+}
+
+.btn.active {
+    background-color: lightgray;
+    border-right: 5px solid red;
+    color: black;
+    font-weight: bold;
+}
+
+.next .menuItemWrapper {
+    border-radius: 15px 0 0 0;
+    overflow: hidden;
+}
+
+.previous .menuItemWrapper {
+    border-radius: 0 0 0 15px;
+    overflow: hidden;
+}
+
+.menuItemWrapper {
+    background-color: white;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.next,
+.previous {
+    background-color: lightgray;
+}
+
+.btn.active .menuItemWrapper {
+    background-color: lightgray;
+}
